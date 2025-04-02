@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(236, 222, 236);
+    color: #612;
+    line-height: 1.6;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-color: #77776e;
+    color: black;
+    padding: 20px 0;
+    text-align: justify;
+}
+
+.header .container {
+    width: 90%;
+    margin: auto;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.links li {
+    list-style: none;
+}
+
+.links li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+.links li a:hover {
+    color: goldenrod;
+}
+
+.home {
+    background-color: lightskyblue;
+    color: cornsilk;
+    padding: 90px;
+    text-align: center;
+}
+
+.home h2 {
+    font-size: 42px;
+    font-weight: 680;
+}
+
+.home .subtitle {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.home .btn {
+    background-color: #060875;
+    padding: 15px 30px;
+    border: black;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+    transition: background-color 0.4s ease;
+}
+
+.home .btn:hover {
+    background-color: orangered;
+}
+
+.about {
+    background-color: rgb(80, 61, 149);
+    padding: 60px;
+    color: white;
+}
+
+.about .section.title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #1a3e6b;
+}
+
+.about .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about .img img {
+    width: 340px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgb(138, 121, 136);
+}
+
+.about .text {
+    width: 50%;
+    padding-left: 40px;
+}
+
+.about .text p {
+    text-align: left;
+    font-size: 20px;
+}
+
+.skills {
+    background-color: #d9e850;
+    color: azure;
+    padding: 60px;
+}
+
+.skills .section.title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: yellowgreen;
+}
+
+.skills .list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skills .item {
+    width: 120px;
+    margin: 10px;
+    text-align: center;
+    background-color: cornflowerblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills .item h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #d7e90a;
+}
+
+.skills .progress.bar {
+    width: 100%;
+    height: 20px;
+    background-color: #bdc3c7;
+}
+
+.skills .progress {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #f39c12;
+}
+
+.education {
+    background-color: rgb(245, 125, 82);
+    padding: 60px 0;
+}
+
+.education .section.title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.education .education-item {
+    background-color: whitesmoke;
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.education .education-item h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.education .education-item p {
+    font-size: 20px;
+    color: #555;
+}
+
+.projects {
+    background-color: #F39C12;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects .item
+{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+
+}
+.projects .section.title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.projects .grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects .grid div {
+
+    background-color: #34495E;
+    
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: #195297;
+    color: white;
+}
+
+.projects .grid div h4 {
+    font-size: 24px;
+    margin-bottom: 13px;
+    color: #F39C12;
+}
+
+.contact {
+    background-color: #2C3E50;
+    color: whitesmoke;
+    padding: 60px;
+}
+
+.contact .section.title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact form .group {
+    margin-bottom: 24px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact form button {
+    background-color: #F39C12;
+    padding: 12px;
+    border: black;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.4s ease;
+}
+
+.contact form button:hover {
+    background-color: #e67e22;
+}
+
+.footer {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer .socialLinks a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.4s ease;
+}
+
+.footer .socialLinks a:hover {
+    color: #F39C12;
+}
+
+@media (max-width: 768px) {
+    .header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header .logo h1 {
+        font-size: 20px;
+    }
+
+    .home h2 {
+        font-size: 30px;
+    }
+
+    .home .subtitle {
+        font-size: 16px;
+    }
+
+    .about .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .text {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .skills .list {
+        flex-direction: column;
+    }
+
+    .projects .grid {
+        flex-direction: column;
+    }
+}
