@@ -5,9 +5,10 @@ const mess = document.getElementById('mess');
 
 btn.addEventListener('click',function()
 {
-    if(name.value==" " && email.value==" ")
+    if(name.value==" " || email.value==" "){
 
         alert("please enter the details");
+    }
     else
     {
         alert("You will be reached out soon");
